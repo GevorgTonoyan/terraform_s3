@@ -9,4 +9,3 @@ variable "environment" {
   description = "Environment name to create."
   default =  "dev"
 }
-
