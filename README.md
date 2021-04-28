@@ -24,7 +24,7 @@ ExternalID and other "confidential" variables could be consumed from AWS Secrets
 
 Code supports using s3 as Terraform backend. This backend also supports state locking and consistency checking via Dynamo DB. This is to allow safe development process in case multiple users would be using this code at the same time.
 
-Additionally using `environment` variables appended to resources and supplying it according to the environment could be one of the approaches for environment separation. Another possibility is to utilize `terraform workspaces`.
+Additionally using `environment` variable appended to resources and supplying it according to the environment could be one of the approaches for environment separation. Another possibility is to utilize `terraform workspaces`.
 
 # module
 More flexibility can be achieved by transforming this code into a module and changing static values into variables. 
