@@ -18,5 +18,4 @@ variable "trusted_user_arn" {
 variable "external_id" {
   type        = string
   description = "External ID provided by third party."
-  default     = "12345"
 }
