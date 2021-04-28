@@ -10,10 +10,9 @@ variable "environment" {
   default     = "dev"
 }
 
-variable "account_id" {
-  description = "AWS Account ID that is allowed to assume this role."
+variable "trusted_user_arn" {
+  description = "AWS Account arn that is allowed to assume this role."
   type        = string
-  default     = "12345678"
 }
 
 variable "external_id" {

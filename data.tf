@@ -4,13 +4,13 @@ data "aws_iam_policy_document" "assume_role_policy" {
 
     principals {
       type        = "AWS"
-      identifiers = [var.account_id]
+      identifiers = [var.trusted_user_arn]
     }
 
     condition {
       test     = "StringEquals"
       variable = "sts:ExternalId"
-      values = [var.external_id]
+      values   = [var.external_id]
     }
   }
 }
